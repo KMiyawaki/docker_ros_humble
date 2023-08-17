@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=ros2 humble
+Comment=open ros2 humble
+Exec=gnome-terminal --profile=docker_ros_humble
+Icon=docker_ros_humble
+Terminal=true
