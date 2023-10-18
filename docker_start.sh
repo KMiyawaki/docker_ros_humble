@@ -7,7 +7,7 @@ function main(){
     local -r GROUP=`id -gn`
     local -r GID=`id -g`
     local -r SUB_GROUPS=`groups|sed "s/${GROUP}//g"|sed "s/^ *\| *$//g"|sed "s/ /,/g"`
-    local -r WS="${HOME}/catkin_ws"
+    local -r WS="${HOME}/ros2_ws"
     local -r WS_SRC="${WS}/src"
     
     if [ ! -e "${WS}" ]; then

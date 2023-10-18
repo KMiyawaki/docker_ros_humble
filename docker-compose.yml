@@ -17,7 +17,7 @@ services:
       - audio
     working_dir: ${HOME}
     volumes:
-      - ${HOME}/catkin_ws:${HOME}/catkin_ws
+      - ${HOME}/ros2_ws:${HOME}/ros2_ws
       - /dev:/dev
       - /etc/passwd:/etc/passwd:ro
       - /etc/group:/etc/group:ro
