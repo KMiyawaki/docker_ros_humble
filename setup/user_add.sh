@@ -21,7 +21,7 @@ function main(){
     echo "${USER_NAME}   ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
     
     cd /home/${USER_NAME}
-    sudo -u ${USER_NAME} git clone -b develop https://github.com/KMiyawaki/setup_robot_programming.git
+    sudo -u ${USER_NAME} git clone https://github.com/KMiyawaki/setup_robot_programming.git
     cd /home/${USER_NAME}/setup_robot_programming
     sudo -u ${USER_NAME} ./setup_emacs.sh
     sudo -u ${USER_NAME} ./install_vscode_extension_from_file.sh ms-iot vscode-ros 0.9.4
