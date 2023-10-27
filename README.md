@@ -17,6 +17,24 @@ git clone https://github.com/KMiyawaki/docker_ros_humble
 ```
 
 このコマンドを実行したターミナル内は`Docker`により`Ubuntu20+ros2 humble`が利用可能となっている。
+初回起動時のみ**コンテナ内で**以下のコマンドを実行する。
+
+```shell
+cd ~/setup_robot_programming/ros2
+./init_workspace.sh -1
+exit # 一旦コンテナから抜ける。
+~/docker_ros_humble/attach.sh # 再度コンテナに入る。
+```
+
+**コンテナ内で**以下のコマンドを実行し、ROS2のテストをする。
+
+```shell
+ros2 run py_pubsub talker
+[INFO] [1698446948.334827906] [minimal_publisher]: Publishing: "Hello World: 0"
+[INFO] [1698446948.770740085] [minimal_publisher]: Publishing: "Hello World: 1"
+・・・
+# Ctrl+C で終了させる。
+```
 
 ## ショートカットを置いて簡単に使う方法
 
