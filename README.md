@@ -16,7 +16,7 @@ git clone https://github.com/KMiyawaki/docker_ros_humble
 ~/docker_ros_humble/attach.sh
 ```
 
-このコマンドを実行したターミナル内は`Docker`により`Ubuntu20+ros2 humble`が利用可能となっている。
+このコマンドを実行したターミナル内は`Docker`により`Ubuntu22+ros2 humble`が利用可能となっている。
 初回起動時のみ**コンテナ内で**以下のコマンドを実行する。
 
 ```shell
@@ -62,7 +62,7 @@ Terminal=true
 ```
 
 デスクトップ上に`open_ros_humble.desktop`が出現するので、右クリックして「実行を許可する」をクリックする。
-以降はこれをダブルクリックすれば`Ubuntu20+ros2 humble`環境が起動する。
+以降はこれをダブルクリックすれば`Ubuntu22+ros2 humble`環境が起動する。
 
 ## 現状の問題点
 
