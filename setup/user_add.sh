@@ -21,12 +21,12 @@ function main(){
     echo "${USER_NAME}   ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
     
     cd /home/${USER_NAME}
-    sudo -u ${USER_NAME} git clone https://github.com/KMiyawaki/setup_robot_programming.git
+    sudo -u ${USER_NAME} -H git clone https://github.com/KMiyawaki/setup_robot_programming.git
     cd /home/${USER_NAME}/setup_robot_programming
-    sudo -u ${USER_NAME} ./setup_emacs.sh
-    sudo -u ${USER_NAME} ./install_vscode_extension_from_file.sh ms-iot vscode-ros 0.9.4
-    sudo -u ${USER_NAME} ./install_vscode_extension_from_file.sh ms-python python 2023.13.11881007
-    sudo -u ${USER_NAME} ./install_vscode_extension_from_file.sh ms-vscode cpptools 1.16.3
+    sudo -u ${USER_NAME} -H ./setup_emacs.sh
+    sudo -u ${USER_NAME} -H ./install_vscode_extension_from_file.sh ms-iot vscode-ros 0.9.4
+    sudo -u ${USER_NAME} -H ./install_vscode_extension_from_file.sh ms-python python 2023.13.11881007
+    sudo -u ${USER_NAME} -H ./install_vscode_extension_from_file.sh ms-vscode cpptools 1.16.3
     # sudo -u ${USER_NAME} ./${ROS_VER}/init_workspace.sh -p # Add python samples
 }
 
