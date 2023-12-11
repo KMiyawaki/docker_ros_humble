@@ -1,6 +1,6 @@
 #!/bin/bash
 function main(){
-    local -r CONTAINER="ros2_humble"
+    local -r CONTAINER="ros2_humble_jetpack"
     local -r BASE_IMAGE="kmiyawaki20/${CONTAINER}"
     local -r IMAGE_NAME="${BASE_IMAGE}_user_${USER}"
     local -r DOCKER_FILE="Dockerfile.useradd"

@@ -2,7 +2,7 @@
 
 function main(){
     cd "$(dirname "$0")"
-    local -r CONTAINER=ros2_humble
+    local -r CONTAINER=ros2_humble_jetpack
     docker ps|grep -q ${CONTAINER}
     if [ $? -eq 1 ]; then
         echo "${CONTAINER} is not running. Try to start."
